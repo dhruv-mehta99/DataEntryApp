@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewApplication"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:nestedScrollingEnabled="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit New Application"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Client Mobile Number"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:id="@+id/edt_client_number"
+        android:background="@drawable/client_mobile_background"
+        android:inputType="numberDecimal"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="5dp"
+        android:id="@+id/btn_validate_number"
+        android:text="Validate Mobile Number"
+        android:background="@drawable/validate_number_background"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pg_name"
+        android:hint="Property/PG Name"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:background="@drawable/from_text_background"/>
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/city_name"
+        android:hint="City"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/from_text_background"/>
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/area_name"
+        android:hint="Area/Locality"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/from_text_background"/>
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_name"
+        android:hint="Owner Name (Optional)"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:background="@drawable/from_text_background"/>
+
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/preferred_language_name"
+        android:hint="Preferred Language (Optional)"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:paddingVertical="5dp"
+        android:background="@drawable/from_text_background"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="SUBMIT"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/submit_button_background"
+        android:id="@+id/btn_submit_entry"/>
+
+
+
+
+
+</LinearLayout>
